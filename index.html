@@ -1,0 +1,49 @@
+<!DOCType HTML>
+  <html>
+  
+    <head>
+      <title>Für Bernardo,</title>
+    </head>
+    
+    <body>    
+      <p>Dear Christopher,<br></p>
+      
+      <!--A clickable button for the review-->
+      <button onclick="myReview()">Habib's weekly review!</button>
+      
+      <!--Where the review is output-->
+      <p id="review"></p>
+
+      <!--Javascript I think-->
+      <script type="text/javascript">
+      
+        //This function is run when the review button is pressed
+        function myReview() 
+        {
+          //Taking inputs
+          var work = window.prompt("How is Habib's work going? (good/bad)");
+          while (work != good && work != bad)
+          {
+            var work = window.prompt("How is Habib's work going? (Type either good or bad!)");
+          }
+          
+          var school = window.prompt("How is Habib's school life? (good/bad)");
+          while (school != good && school != bad)
+          {
+            var school = window.prompt("How is Habib's school life? (Type either good or bad!)");
+          }
+          
+          var life = window.prompt("How is Habib's life in general? (good/bad)";
+          while (life != good && school != bad)
+          {
+            var life = window.prompt("How is Habib's life in general? (Type either good or bad!)");
+          }
+          
+          
+      
+          //Combining inputs and output to p element with id review
+          document.getElementById("review").innerHTML = work + school + life;
+      }
+      </script>
+    </body>
+  </html>
