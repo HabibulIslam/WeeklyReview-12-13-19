@@ -13,6 +13,9 @@
       
       <!--Where the review is output-->
       <p id="review"></p>
+      
+      <!--My best regards-->
+      <p
 
       <!--Javascript I think-->
       <script type="text/javascript">
@@ -39,8 +42,26 @@
             var life = window.prompt("How is Habib's life in general? (Type either good or bad!)");
           }
           
+          //Choose the proper response depending on the inputs
+          if (work == good) {
+            work = "Work has been good";
+          } else {
+            work = "Work has been bad";
+          }
           
+          if (work == good) {
+            work = "Work has been good";
+          } else {
+            work = "Work has been bad";
+          }
+          
+          if (work == good) {
+            work = "Work has been good";
+          } else {
+            work = "Work has been bad";
+          }
       
+          
           //Combining inputs and output to p element with id review
           document.getElementById("review").innerHTML = work + school + life;
       }
