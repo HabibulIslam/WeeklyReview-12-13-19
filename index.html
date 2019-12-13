@@ -2,7 +2,7 @@
   <html>
   
     <head>
-      <title>Für Bernardo 1.5</title>
+      <title>Für Bernardo 1.6</title>
     </head>
     
     <body>    
@@ -11,7 +11,7 @@
       <button onclick="myReview()">Dear Christopher,</button>
       
       <!--Where the review is output-->
-      <p id="review"></p>
+      <p id="work"></p><p id="school"></p><p id="life"></p>
       
       <!--My best regards-->
       <p id="best"><br></p>
@@ -30,19 +30,25 @@
           {
             var work = window.prompt("How is Habib's work going? (Type either good or bad!)");
           }
+          */
           
           var school = window.prompt("How is Habib's school life? (good/bad)");
+          /*
           while (school != good && school != bad)
           {
             var school = window.prompt("How is Habib's school life? (Type either good or bad!)");
           }
+          */
           
           var life = window.prompt("How is Habib's life in general? (good/bad)";
+          /*
           while (life != good && school != bad)
           {
             var life = window.prompt("How is Habib's life in general? (Type either good or bad!)");
           }
+          */
           
+          /*
           //Choose the proper response depending on the inputs
           if (work == good) {
             work = "Work has been good";
@@ -66,6 +72,8 @@
           
           //Combining inputs and output to p element with id review
           document.getElementById("review").innerHTML = work;
+          document.getElementById("review").innerHTML = school;
+          document.getElementById("review").innerHTML = life;
           document.getElementById("best").innerHTML = "Best regards,";
           document.getElementById("signature").innerHTML = "Habibul I.";
       }
