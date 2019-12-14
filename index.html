@@ -2,7 +2,7 @@
   <html>
   
     <head>
-      <title>Für Bernardo 2.4</title>
+      <title>Für Bernardo 2.5</title>
     </head>
     
     <body>    
@@ -25,48 +25,41 @@
         {
           //Taking inputs
           var work = window.prompt("How is Habib's work going? (good/bad)");
-          
           while (!((work == 'good') || (work == 'bad')))
           {
             var work = window.prompt("How is Habib's work going? (Type either good or bad!)");
           }
           
           var school = window.prompt("How is Habib's school life? (good/bad)");
-          /*
-          while (school != good && school != bad)
+          while (!((school == 'good') || (school == 'bad')))
           {
             var school = window.prompt("How is Habib's school life? (Type either good or bad!)");
           }
-          */
           
           var life = window.prompt("How is Habib's life in general? (good/bad)");
-          /*
-          while (life != good && school != bad)
+          while (!((life == 'good') || (life == 'bad')))
           {
             var life = window.prompt("How is Habib's life in general? (Type either good or bad!)");
           }
-          */
-          
-          /*
+         
           //Choose the proper response depending on the inputs
           if (work == good) {
-            work = "Work has been good";
+            work = "Work has been good. ";
           } else {
-            work = "Work has been bad";
+            work = "Work has been bad. ";
           }
           
           if (school == good) {
-            school = "School has been good";
+            school = "School has been good. ";
           } else {
-            school = "School has been bad";
+            school = "School has been bad. ";
           }
           
           if (life == good) {
-            life = "Life has been good";
+            life = "Life has been good.";
           } else {
-            life = "Life has been bad";
+            life = "Life has been bad.";
           }
-          */
           
           
           //Combining inputs and output to p element with id review
