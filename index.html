@@ -2,7 +2,7 @@
   <html>
   
     <head>
-      <title>Für Bernardo 2.0</title>
+      <title>Für Bernardo 2.1</title>
     </head>
     
     <body>    
@@ -11,7 +11,7 @@
       <button onclick="myReview()">Dear Christopher,</button>
       
       <!--Where the review is output-->
-      <p id="work"><p id="school"><p id="life"></p></p></p>
+      <p id="review"></p>
       
       <!--My best regards-->
       <p id="best"><br></p>
@@ -71,9 +71,7 @@
           
           
           //Combining inputs and output to p element with id review
-          document.getElementById("work").innerHTML = work + school;
-          document.getElementById("school").innerHTML = school;
-          document.getElementById("life").innerHTML = life;
+          document.getElementById("review").innerHTML = work + school + life;
           document.getElementById("best").innerHTML = "Best regards,";
           document.getElementById("signature").innerHTML = "Habibul I.";
       }
