@@ -1,12 +1,10 @@
 <!DOCType HTML>
   <html>
-  
     <head>
       <title>Für Bernardo 2.6</title>
     </head>
     
     <body>    
-      
       <!--A clickable button for the review-->
       <button onclick="myReview()">Dear Christopher,</button>
       
@@ -44,23 +42,22 @@
          
           //Choose the proper response depending on the inputs
           if (work == 'good') {
-            work = "Work has been good. ";
+            work = "Work has been wonderful. I always love coming into work and coming up with million dollar ideas with Bryan and Chris Storey. I got to close with Jason today which was sick. Only have one final left but after it is done, I will be BIG chillin. ";
           } else {
-            work = "Work has been bad. ";
+            work = "Work has been bad. I dislike coming into work and trying to work on either homework or projects I enjoy working on but constantly get interupted by calls. This time sheet was a mess and I am freaking out about it and Joe doesn't respond to my teams messages. ";
           }
           
           if (school == 'good') {
-            school = "School has been good. ";
+            school = "School has been great. School has been good. I am so glad that this semester is over with and I have a break. I really enjoyed English 3060 and learned a lot about presenting and collaborating in a four person team! ";
           } else {
-            school = "School has been bad. ";
+            school = "School has been bad. I generally hate going to school. My grades are probably going to be pretty mediocre but at least I passed which is all I care about at this point. ";
           }
           
           if (life == 'good') {
-            life = "Life has been good.";
+            life = "Life has been good. I finally get a break from school for Christmas. I get time to work on personal projects, reconnect with friends, and enjoy all the fun things I used to enjoy doing when I had more time. Merry Christmas! ";
           } else {
-            life = "Life has been bad.";
+            life = "Life has been bad. Paying bills sucks. I am always broke all the time and can't buy things without worrying about running out of money and not being able to pay bills. ";
           }
-          
           
           //Combining inputs and output to p element with id review
           document.getElementById("review").innerHTML = work + school + life;
